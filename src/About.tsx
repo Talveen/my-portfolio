@@ -1,4 +1,4 @@
-import { Box, Text, VStack, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Text, Heading, SimpleGrid } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const About = () => {
