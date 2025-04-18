@@ -1,23 +1,6 @@
-import { Box, Text, Button, VStack, Input, Textarea, useToast } from "@chakra-ui/react";
-import { useState } from "react";
+import { Box, Text, Button, VStack } from "@chakra-ui/react"; // Removed Input and Textarea
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const toast = useToast();
-
-  const handleSendEmail = () => {
-    toast({
-      title: "Email Sent",
-      description: "Your email has been sent successfully!",
-      status: "success",
-      duration: 3000,
-      isClosable: true,
-    });
-    setEmail("");
-    setMessage("");
-  };
-
   return (
     <Box p={8}>
       <Text fontSize="3xl" fontWeight="bold">Contact Me</Text>
